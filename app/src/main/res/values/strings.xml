@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="hidden">Hidden</string>
+    <string name="shown">Shown</string>
+    <string name="temperature_preference">temp_preference</string>
+</resources>
