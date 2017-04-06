@@ -3,111 +3,83 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:id="@+id/layout1"
-        >
+        android:id="@+id/weather_image_icon"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
 
+        />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                 android:textSize="12sp"
-                android:text="Summary"
-                android:id="@+id/txt_weather_summary"
-                />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txt_date_time"
+        android:layout_alignTop="@+id/weather_image_icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:id="@+id/layout2"
-        android:layout_below="@+id/layout1"
+        android:text="Temperature_Max"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/weather_image_icon"
         >
+    </TextView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                 android:textSize="12sp"
-                android:text="icon"
-                android:id="@+id/txt_weather_icon"
-
-                />
-        </LinearLayout>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txt_summary"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:orientation="horizontal"
-        android:id="@+id/layout3"
-        android:layout_below="@+id/layout2"
-        >
+        android:text="Temperature_Max"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/weather_image_icon"
+        android:layout_below="@+id/txt_date_time">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_weather_max_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature_Max"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/weather_image_icon"
+        android:layout_below="@+id/txt_summary">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_weather_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/weather_image_icon"
+        android:layout_below="@+id/txt_weather_max_temperature">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_weather_min_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature_Min"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/txt_weather_max_temperature"
+        android:layout_below="@+id/txt_summary">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_weather_windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WindSpeed"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:layout_alignLeft="@+id/txt_weather_min_temperature"
+        android:layout_toRightOf="@+id/txt_weather_temperature"
+        android:layout_below="@+id/txt_weather_min_temperature">
+    </TextView>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:textSize="12sp"
-                android:text="MaxTemperature"
-                android:id="@+id/txt_weather_max_temperature"
-
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                 android:textSize="12sp"
-                android:text="humidity"
-                android:id="@+id/txt_weather_humidity"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                 android:textSize="12sp"
-                android:text="windspeed"
-                android:id="@+id/txt_weather_windspeed"
-
-                />
-        </LinearLayout>
-    </LinearLayout>
-
- </RelativeLayout>
+</RelativeLayout>

@@ -5,31 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.anilkothari.weatherapp.MainActivity">
+    tools:context="com.weather.WeatherActivity">
 
     <ProgressBar
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
          android:layout_centerInParent="true"
         android:id="@+id/progress_view"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/error"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textSize="14sp"
+        android:textColor="#FF0000"
         />
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/layout1"        >
-
-
-
+        android:id="@+id/current_weather_layout"        >
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/weather_image_icon"
-
+            android:visibility="invisible"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
 
@@ -45,15 +54,27 @@
             >
 
             <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:textStyle="bold|italic"></TextView>
+
+            <TextView
                 android:id="@+id/weather_temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Temperature"></TextView>
+                android:text="Temperature"
+                android:visibility="invisible"
+                android:textSize="20sp"></TextView>
 
             <TextView
                 android:id="@+id/weather_humidity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:visibility="invisible"
                 android:text="Humidity : ">
 
             </TextView>
@@ -61,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/weather_wind"
+                android:visibility="invisible"
                 android:text="placeholder">
 
             </TextView>
@@ -74,7 +96,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@+id/layout1">
+        android:layout_below="@+id/current_weather_layout">
 
     <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

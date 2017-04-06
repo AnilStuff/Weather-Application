@@ -4,4 +4,37 @@
     <string name="hidden">Hidden</string>
     <string name="shown">Shown</string>
     <string name="temperature_preference">temp_preference</string>
+    <string name="title_activity_city__details">Settings</string>
+    
+    
+    
+    <!-- Strings related to Forecast List Adapter -->
+
+
+    <string name="WindTextView">Wind :</string>
+    <string name="TemperatureTextView">Temperature :</string>
+    <string name="TemperatureMinTextView">Temperature Min :</string>
+    <string name="TemperatureMaxTextView">Temperature Max :</string>
+    <string name="DateTextView">Date </string>
+    <string name="SummaryTextView">Summary :</string>
+    
+    <string name="DegreeCelcius">°C</string>
+    <string name="MeterPerSecond">m/s</string>
+
+
+    <!-- Strings related to Add city -->
+
+     <string name="title_activity_weather_setting">Settings</string>
+    <string name="submit">submit</string>
+    <string name="eligibleCharactersCountryName">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="eligibleCharactersCityName">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -\/мнбвцхзасдфгчйкльжэщюпоиуытрешяёъáéíñóúüáčďéěíňóřšť</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="error_pair_not_found">Please enter a valid pair of city and country</string>
+    <string name="error_incomplete_form">Please fill the mandatory fields</string>
+    <string name="move_to_weather_screen">Pair saved. Please go to weather screen</string>
+    <string name="error_go_to_setting">Go To Settings Screen and enter your city and Country name</string>
+
+
+
 </resources>
