@@ -34,7 +34,8 @@
         </activity>
         <activity
             android:name=".WeatherSettingActivity"
-            android:label="@string/title_activity_weather_setting"></activity>
+            android:label="@string/title_activity_weather_setting" />
+        <activity android:name=".citylist"></activity>
     </application>
 
 </manifest>

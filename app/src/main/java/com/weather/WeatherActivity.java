@@ -220,6 +220,8 @@ public class WeatherActivity extends AppCompatActivity implements LoaderManager.
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.settings){
             showSettingsScreen();
+        }else if (item.getItemId() == R.id.countryList){
+            showCityListScreen();
         }
         return true;
     }
@@ -227,6 +229,10 @@ public class WeatherActivity extends AppCompatActivity implements LoaderManager.
 
     protected void showSettingsScreen(){
         Intent intent = new Intent(WeatherActivity.this, WeatherSettingActivity.class);
+        WeatherActivity.this.startActivity(intent);
+    }
+    protected void showCityListScreen(){
+        Intent intent = new Intent(WeatherActivity.this, citylist.class);
         WeatherActivity.this.startActivity(intent);
     }
 
